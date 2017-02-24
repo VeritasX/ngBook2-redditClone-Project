@@ -46,4 +46,9 @@ ul.ui.list li:before {
   clear: both;
   width: 100%;
 }
-
+li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding-right: 1.5em;
+}
