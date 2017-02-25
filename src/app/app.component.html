@@ -1,6 +1,6 @@
 <form class="ui large form segment">
     <h3 class ="ui header">Add a Link</h3>
-    <p>Noah is a super cool karate kid</p>
+    
     <div class = " field">
       <label for="title">Title: </label>
       <input name="title" #newtitle>
@@ -13,6 +13,6 @@
     <button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button">Submit Link</button>
   </form>
 <div class="ui grid posts">
-  <app-article>
+  <app-article *ngFor="let article of articles" [article]="article">
   </app-article>
 </div>
